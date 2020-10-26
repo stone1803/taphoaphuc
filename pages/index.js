@@ -2,12 +2,18 @@ import Navbar from "./layout/Navbar";
 
 import Head from "next/head";
 import Main from "./layout/main";
+import Footer from "./layout/footer";
+import { DefaultSeo } from 'next-seo';
+import SEO from '../next-seo.config';
 
 export default function Home() {
   return (
     <div>
+       <DefaultSeo {...SEO}
+       
+        />
       <Head>
-        <title>My page title</title>
+        <title>Lão Bạch Shop</title>
         <link
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
@@ -38,6 +44,7 @@ export default function Home() {
       </Head>
       <Navbar />
       <Main/>
+      <Footer/>
     </div>
   );
 }
