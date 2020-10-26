@@ -48,7 +48,7 @@ export default function Footer() {
           </div>
           <div className="col-xs-12 col-sm-6 col-md-3">
             <div className="widget no-box">
-              <h5 className="widget-title">Contact Us<span /></h5>
+              <h5 className="widget-title">Liên Hệ Chúng Tôi<span /></h5>
               <p><a href="mailto:info@domain.com" title="glorythemes">Email : ledanghongphuc@gmail.com</a></p>
               <p><a href="tel:+84937895335" title="glorythemes"> SĐT : 0937895335</a></p>
 
