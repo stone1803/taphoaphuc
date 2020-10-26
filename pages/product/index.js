@@ -51,7 +51,7 @@ export default function IndexProduct() {
       <div className="card rounded">
         <div className="card-image">
           <span className="card-notify-badge">Sản Phẩm</span>
-          <img className="img-fluid" src="http://lazuvietnam.com/wp-content/uploads/2020/06/222-510x588.png" alt="Mật ong Manuka & Sữa non" />
+          <img className="img-fluid" src="https://firebasestorage.googleapis.com/v0/b/phucmap.appspot.com/o/333-510x588.png?alt=media&token=5b1ffe1a-e7e6-4c0d-bf16-c087ddbd0ff7" alt="Mật ong Manuka & Sữa non" />
         </div>
         <div className="card-image-overlay m-auto">
           <span className="card-detail-badge">1.250.000 VNĐ</span>
