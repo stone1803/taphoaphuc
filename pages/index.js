@@ -7,6 +7,7 @@ import SEO from '../next-seo.config';
 import Layout from "./layout/mylayout";
 import ProductID from "./sanpham/[id]";
 import Test from "./sanpham/test";
+import { GA_TRACKING_ID } from './api/gtag'
 
 export default function Home() {
   return (
@@ -45,7 +46,23 @@ export default function Home() {
           integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
           crossorigin="anonymous"
         ></link>
+           <script
+                async
+                src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+              />
+              <script
+                dangerouslySetInnerHTML={{
+                  __html: `
+                    window.dataLayer = window.dataLayer || [];
+                    function gtag(){dataLayer.push(arguments);}
+                    gtag('js', new Date());
 
+                    gtag('config', '${GA_TRACKING_ID}', {
+                      page_path: window.location.pathname,
+                    });
+                  `,
+                }}
+              />
       </Head>
     <Layout>
       <Main/>
