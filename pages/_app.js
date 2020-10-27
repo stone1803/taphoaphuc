@@ -36,6 +36,10 @@ import {
   isLoaded,
 } from "react-redux-firebase";
 import Loading from "./components/config/store/action/loading";
+import * as gtag from "../pages/lib/gtag"
+import Router from 'next/router'
+Router.events.on('routeChangeComplete', (url) => gtag.pageview(url))
+
 function AuthIsLoaded({ children }) {
   const auth = useSelector((state) => state.firebaseReducer.auth);
   if (!isLoaded(auth))

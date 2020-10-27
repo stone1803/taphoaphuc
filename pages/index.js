@@ -45,14 +45,7 @@ export default function Home() {
           integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
           crossorigin="anonymous"
         ></link>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-CKQ5QZF0QR"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments)}
-  gtag('js', new Date());
 
-  gtag('config', 'G-CKQ5QZF0QR');
-</script>
       </Head>
     <Layout>
       <Main/>
