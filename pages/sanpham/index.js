@@ -1,13 +1,15 @@
 import React from "react";
-import Link from "next/link";
+import  Layout  from "../layout/mylayout"
+
 export default function IndexProduct() {
   return (
+    <Layout>
+   
     <div className="container">
-      <br />
+     <br />
       <h4>Sản phẩm mà chúng tôi cung cấp !</h4>
       <br />
       <div className="row" id="ads">
-        {/* Category Card */}
         <div className="col-md-4 mb-4">
           <div className="card rounded">
             <div className="card-image">
@@ -80,6 +82,9 @@ export default function IndexProduct() {
           </div>
         </div>
       </div>
+
     </div>
+    </Layout>
+
   );
 }
