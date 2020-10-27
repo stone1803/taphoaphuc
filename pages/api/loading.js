@@ -1,4 +1,4 @@
-import Loader from 'react-loader-spinner'
+import Loader from "react-loader-spinner";
 import React from "react";
 
 export default function Loading() {
@@ -11,8 +11,9 @@ export default function Loading() {
         justifyContent: "center",
         alignItems: "center",
       }}
-    >          <Loader type="Hearts" color="#00BFFF" height={200} width={250} />
-
+    >
+      {" "}
+      <Loader type="Hearts" color="#00BFFF" height={200} width={250} />
     </div>
   );
 }

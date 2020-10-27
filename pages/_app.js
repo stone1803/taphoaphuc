@@ -35,8 +35,8 @@ import {
   ReactReduxFirebaseProvider,
   isLoaded,
 } from "react-redux-firebase";
-import Loading from "./components/config/store/action/loading";
-import * as gtag from "../pages/lib/gtag"
+import Loading from "./api/loading";
+import * as gtag from "./api/gtag"
 import Router from 'next/router'
 Router.events.on('routeChangeComplete', (url) => gtag.pageview(url))
 

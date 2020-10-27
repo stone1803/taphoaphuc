@@ -15,4 +15,3 @@ export const event = ({ action, category, label, value }) => {
     value: value,
   })
 }
-export default pageview
