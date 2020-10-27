@@ -2,9 +2,11 @@ import Navbar from "./layout/Navbar";
 
 import Head from "next/head";
 import Main from "./layout/main";
-import Footer from "./layout/footer";
 import { DefaultSeo } from 'next-seo';
 import SEO from '../next-seo.config';
+import Layout from "./layout/mylayout";
+import ProductID from "./sanpham/[id]";
+import Test from "./sanpham/test";
 
 export default function Home() {
   return (
@@ -14,6 +16,8 @@ export default function Home() {
         />
       <Head>
         <title>Lão Bạch Shop</title>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"></link>
+
         <link
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
@@ -41,10 +45,19 @@ export default function Home() {
           integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
           crossorigin="anonymous"
         ></link>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CKQ5QZF0QR"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments)}
+  gtag('js', new Date());
+
+  gtag('config', 'G-CKQ5QZF0QR');
+</script>
       </Head>
-      <Navbar />
+    <Layout>
       <Main/>
-      <Footer/>
+      <Test/>
+    </Layout>
     </div>
   );
 }

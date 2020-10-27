@@ -1,5 +1,5 @@
 import React from 'react'
-import IndexProduct from '../product'
+import IndexProduct from '../sanpham'
 
 export default function Main() {
     return (
