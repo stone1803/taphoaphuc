@@ -2,6 +2,9 @@ import React from "react";
 import Link from "next/link";
 import Layout from "../layout/mylayout";
 import firebase from "firebase";
+import Head from "next/head";
+import { ProductJsonLd } from 'next-seo';
+
 const firebaseConfig = {
   apiKey: "AIzaSyCmcq8_D6LB5bK49rENMle7XoN1GAWcaMw",
   authDomain: "phucmap.firebaseapp.com",
@@ -22,6 +25,63 @@ const fire = firebase;
 export default function ProductID(props) {
   return (
     <Layout>
+       <Head>
+        <title>Lão bạh Shop - {props.tenSanPham}</title>
+        <meta name="description" content={props.totTat} />
+        <meta name="thumbnail" content={props.hinhAnh}/>
+        <meta property="og:title" content={props.tenSanPham} />
+        <meta property="og:type" content="website" />
+        <meta property="og:description" content={props.totTat} />
+        <meta property="og:image" content={props.hinhAnh} />
+        <meta  name="viewport" content="width=device-width, initial-scale=1" />
+
+      </Head>
+      <ProductJsonLd
+      productName={props.tenSanPham}
+      images={props.hinhAnh}
+      description={props.tomTat}
+      brand="LAZU"
+      reviews={[
+        {
+          author: {
+            type: 'Lazu',
+            name: 'Laobach.com',
+          },
+          datePublished: '2020-10-06T03:37:40Z',
+          reviewBody:
+            'Sản phầm đúng nhập khẩu 100%. lão bạch đáng tin dùng',
+          name: 'So awesome!!!',
+          reviewRating: {
+            bestRating: '5',
+            ratingValue: '5',
+            worstRating: '1',
+          },
+          publisher: {
+            type: 'LaoBach',
+            name: 'LaoBach',
+          },
+        },
+      ]}
+      aggregateRating={{
+        ratingValue: '4.4',
+        reviewCount: '89',
+      }}
+      offers={[
+        {
+          price: props.gia,
+          priceCurrency: 'VND',
+          priceValidUntil: '2020-11-05',
+          itemCondition: 'http://schema.org/UsedCondition',
+          availability: 'http://schema.org/InStock',
+          url: 'https://laobach.com',
+          seller: {
+            name: 'Executive Objects',
+          },
+        },
+  
+      ]}
+      mpn="925872"
+    />
       <div class="container mt-3">
         <div class="card">
           <div class="container-fliud">
