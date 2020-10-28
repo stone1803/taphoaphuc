@@ -38,8 +38,11 @@ export default function ProductID(props) {
       </Head>
       <ProductJsonLd
       productName={props.tenSanPham}
-      images={props.hinhAnh}
-      description={props.tomTat}
+      images={[
+        'https://firebasestorage.googleapis.com/v0/b/phucmap.appspot.com/o/121638426_103259701572886_5718697555251716310_n-min.jpg?alt=media&token=98324002-173d-405f-9e73-686266f931df',
+        'https://firebasestorage.googleapis.com/v0/b/phucmap.appspot.com/o/121638426_103259701572886_5718697555251716310_n-min.jpg?alt=media&token=98324002-173d-405f-9e73-686266f931df',
+        'https://firebasestorage.googleapis.com/v0/b/phucmap.appspot.com/o/121638426_103259701572886_5718697555251716310_n-min.jpg?alt=media&token=98324002-173d-405f-9e73-686266f931df',
+      ]}      description={props.tomTat}
       brand="LAZU"
       reviews={[
         {
@@ -73,9 +76,9 @@ export default function ProductID(props) {
           priceValidUntil: '2020-11-05',
           itemCondition: 'http://schema.org/UsedCondition',
           availability: 'http://schema.org/InStock',
-          url: 'https://laobach.com',
+          url: `https://laobach.com/${props.id}`,
           seller: {
-            name: 'Executive Objects',
+            name: 'Lão Bạch',
           },
         },
   
