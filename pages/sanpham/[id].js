@@ -26,7 +26,7 @@ export default function ProductID(props) {
   return (
     <Layout>
        <Head>
-        <title>Lão bạh Shop - {props.tenSanPham}</title>
+        <title>Lão bạch Shop - {props.tenSanPham}</title>
         <meta name="description" content={props.totTat} />
         <meta name="thumbnail" content={props.hinhAnh}/>
         <meta property="og:title" content={props.tenSanPham} />
