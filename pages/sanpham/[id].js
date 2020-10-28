@@ -44,8 +44,8 @@ export default function ProductID(props) {
       reviews={[
         {
           author: {
-            type: 'Lazu',
-            name: 'Laobach.com',
+            type: 'Person',
+            name: 'Ta là lão bạch',
           },
           datePublished: '2020-10-06T03:37:40Z',
           reviewBody:
@@ -57,8 +57,8 @@ export default function ProductID(props) {
             worstRating: '1',
           },
           publisher: {
-            type: 'LaoBach',
-            name: 'LaoBach',
+            type: 'Organization',
+            name: 'TwoVit',
           },
         },
       ]}
