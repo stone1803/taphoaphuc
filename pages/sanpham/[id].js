@@ -3,7 +3,7 @@ import Link from "next/link";
 import Layout from "../layout/mylayout";
 import firebase from "firebase";
 import Head from "next/head";
-import { ProductJsonLd } from 'next-seo';
+import { ProductJsonLd } from "next-seo";
 
 const firebaseConfig = {
   apiKey: "AIzaSyCmcq8_D6LB5bK49rENMle7XoN1GAWcaMw",
@@ -25,66 +25,64 @@ const fire = firebase;
 export default function ProductID(props) {
   return (
     <Layout>
-       <Head>
+      <Head>
         <title>Lão bạch Shop - {props.tenSanPham}</title>
-        <meta name="description" content={props.totTat} />
-        <meta name="thumbnail" content={props.hinhAnh}/>
+        <meta name="description" content={props.tomTat} />
+        <meta name="thumbnail" content={props.hinhAnh} />
         <meta property="og:title" content={props.tenSanPham} />
         <meta property="og:type" content="website" />
-        <meta property="og:description" content={props.totTat} />
+        <meta property="og:description" content={props.tomTat} />
         <meta property="og:image" content={props.hinhAnh} />
-        <meta  name="viewport" content="width=device-width, initial-scale=1" />
-
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <ProductJsonLd
-      productName={props.tenSanPham}
-      images={[
-        'https://firebasestorage.googleapis.com/v0/b/phucmap.appspot.com/o/121638426_103259701572886_5718697555251716310_n-min.jpg?alt=media&token=98324002-173d-405f-9e73-686266f931df',
-        'https://firebasestorage.googleapis.com/v0/b/phucmap.appspot.com/o/121638426_103259701572886_5718697555251716310_n-min.jpg?alt=media&token=98324002-173d-405f-9e73-686266f931df',
-        'https://firebasestorage.googleapis.com/v0/b/phucmap.appspot.com/o/121638426_103259701572886_5718697555251716310_n-min.jpg?alt=media&token=98324002-173d-405f-9e73-686266f931df',
-      ]}      description={props.tomTat}
-      brand="LAZU"
-      reviews={[
-        {
-          author: {
-            type: 'Person',
-            name: 'Ta là lão bạch',
+        productName={props.tenSanPham}
+        images={[
+          "https://firebasestorage.googleapis.com/v0/b/phucmap.appspot.com/o/121638426_103259701572886_5718697555251716310_n-min.jpg?alt=media&token=98324002-173d-405f-9e73-686266f931df",
+          "https://firebasestorage.googleapis.com/v0/b/phucmap.appspot.com/o/121638426_103259701572886_5718697555251716310_n-min.jpg?alt=media&token=98324002-173d-405f-9e73-686266f931df",
+          "https://firebasestorage.googleapis.com/v0/b/phucmap.appspot.com/o/121638426_103259701572886_5718697555251716310_n-min.jpg?alt=media&token=98324002-173d-405f-9e73-686266f931df",
+        ]}
+        description={props.tomTat}
+        brand="LAZU"
+        reviews={[
+          {
+            author: {
+              type: "Person",
+              name: "Ta là lão bạch",
+            },
+            datePublished: "2020-10-06T03:37:40Z",
+            reviewBody: "Sản phầm đúng nhập khẩu 100%. lão bạch đáng tin dùng",
+            name: "So awesome!!!",
+            reviewRating: {
+              bestRating: "5",
+              ratingValue: "5",
+              worstRating: "1",
+            },
+            publisher: {
+              type: "Organization",
+              name: "TwoVit",
+            },
           },
-          datePublished: '2020-10-06T03:37:40Z',
-          reviewBody:
-            'Sản phầm đúng nhập khẩu 100%. lão bạch đáng tin dùng',
-          name: 'So awesome!!!',
-          reviewRating: {
-            bestRating: '5',
-            ratingValue: '5',
-            worstRating: '1',
+        ]}
+        aggregateRating={{
+          ratingValue: "4.4",
+          reviewCount: "89",
+        }}
+        offers={[
+          {
+            price: props.gia,
+            priceCurrency: "VND",
+            priceValidUntil: "2020-11-05",
+            itemCondition: "http://schema.org/UsedCondition",
+            availability: "http://schema.org/InStock",
+            url: `https://laobach.com/${props.id}`,
+            seller: {
+              name: "Lão Bạch",
+            },
           },
-          publisher: {
-            type: 'Organization',
-            name: 'TwoVit',
-          },
-        },
-      ]}
-      aggregateRating={{
-        ratingValue: '4.4',
-        reviewCount: '89',
-      }}
-      offers={[
-        {
-          price: props.gia,
-          priceCurrency: 'VND',
-          priceValidUntil: '2020-11-05',
-          itemCondition: 'http://schema.org/UsedCondition',
-          availability: 'http://schema.org/InStock',
-          url: `https://laobach.com/${props.id}`,
-          seller: {
-            name: 'Lão Bạch',
-          },
-        },
-  
-      ]}
-      mpn="925872"
-    />
+        ]}
+        mpn="925872"
+      />
       <div class="container mt-3">
         <div class="card">
           <div class="container-fliud">
@@ -199,9 +197,8 @@ export const getServerSideProps = async ({ query }) => {
       content["hinhAnh1"] = result.data().hinhAnh1;
       content["hinhAnh2"] = result.data().hinhAnh2;
       content["hinhAnh3"] = result.data().hinhAnh3;
-	  content["hinhAnh4"] = result.data().hinhAnh4;
-	  content["hinhAnh5"] = result.data().hinhAnh5;
-
+      content["hinhAnh4"] = result.data().hinhAnh4;
+      content["hinhAnh5"] = result.data().hinhAnh5;
 
       content["gia"] = result.data().gia;
     });
@@ -214,9 +211,8 @@ export const getServerSideProps = async ({ query }) => {
       hinhAnh1: content.hinhAnh1,
       hinhAnh2: content.hinhAnh2,
       hinhAnh3: content.hinhAnh3,
-	  hinhAnh4: content.hinhAnh4,
-	  hinhAnh5: content.hinhAnh5
-
+      hinhAnh4: content.hinhAnh4,
+      hinhAnh5: content.hinhAnh5,
     },
   };
 };
