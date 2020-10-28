@@ -1,16 +1,21 @@
 import Navbar from "./layout/Navbar";
-
+import firebase from "firebase/app";
+import "firebase/storage";
+import "firebase/firestore";
 import Head from "next/head";
 import Main from "./layout/main";
-import { DefaultSeo } from 'next-seo';
-import SEO from '../next-seo.config';
-
-import Layout from "./layout/mylayout"
+import { DefaultSeo } from "next-seo";
+import SEO from "../next-seo.config";
+import { useSelector } from "react-redux";
+import { useFirestoreConnect, firebaseConnect } from "react-redux-firebase";
 import IndexProduct from "./sanpham";
 export default function Home() {
-  return (
+
+    return (
     <div>
-        <Head>
+      <DefaultSeo {...SEO} />
+
+      <Head>
         <title>Lão Bạch Shop</title>
         <link
           href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
@@ -61,7 +66,14 @@ export default function Home() {
           }}
         />
       </Head>
-          <IndexProduct/>
+      <IndexProduct />
     </div>
   );
 }
+export async function getStaticProps() {
+  let data= {}
+  return {
+    props: data,
+  };
+}
+
