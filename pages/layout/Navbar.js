@@ -34,7 +34,10 @@ export default function Navbar() {
             <a onClick={() => router.push("/sanpham/")} className="nav-link">
               Sản Phẩm
             </a>
-            <a className="nav-link">Bài Viết</a>
+            <a onClick={() => router.push("/baiviet/")} className="nav-link">
+              
+              
+              Bài Viết</a>
             <a className="nav-link">Liên Hệ</a>
           </div>
         </div>
