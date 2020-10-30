@@ -35,6 +35,14 @@ export default function ProductID(props) {
         <meta property="og:image" content={props.hinhAnh} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
+      <div id="fb-root"></div>
+      <script
+        async
+        defer
+        crossorigin="anonymous"
+        src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v8.0&appId=448105932266610&autoLogAppEvents=1"
+        nonce="jpf30rJn"
+      ></script>
       <ProductJsonLd
         productName={props.tenSanPham}
         images={[
@@ -159,17 +167,32 @@ export default function ProductID(props) {
                 <h5 class="colors">📱 Liên Hệ: 0937895335</h5>
                 <div class="action">
                   <button
+                    s
                     class="add-to-cart btn btn-danger mr-2 mb-2"
                     type="button"
                   >
-                    MUA HÀNG
+                    <a href="https://www.messenger.com/t/ledanghongphuc">
+                      MUA HÀNG
+                    </a>
                   </button>
-                  <button class="like btn btn-info mr-2 mb-2" type="button">
-                    <span class="fa fa-facebook">
-                      {" "}
-                      Share cho người thân bạn dùng nhé !
-                    </span>
-                  </button>
+                  <div
+                    class="fb-share-button"
+                    data-href="https://developers.facebook.com/docs/plugins/"
+                    data-layout="button_count"
+                    data-size="small"
+                  >
+                    <a
+                      target="_blank"
+                      href="https://www.facebook.com/sharer/sharer.php?u=https://laobach.com"
+                      class="fb-xfbml-parse-ignore"
+                    >
+                      <button class="like btn btn-info mr-2 mb-2" type="button">
+                        <span class="fa fa-facebook">
+                          Share cho người thân bạn dùng nhé !
+                        </span>
+                      </button>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>

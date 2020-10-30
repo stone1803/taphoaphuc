@@ -40,16 +40,16 @@ const Blog = (props) => {
         <meta property="og:image" content={props.HinhAnh} />
       </Head>
 
-      <div class="mx-auto container ">
-        <div className="pl-5 bg-orange-200 rounded-lg mt-2 py-5">
+      <div class=" container ">
+        <div className="pl-5 bg-orange-200 rounded-lg mt-1 py-5">
           {ReactHtmlParser(props.noidung)}
         </div>
         <button
           onClick={() => router.push("/baiviet/")}
           type="button"
-          class="mt-2 btn btn-info rounded"
+          class="mt-4 btn btn-info rounded container"
         >
-          <span class="">Trở về</span>
+          <span class="mt-2">Trở về</span>
         </button>
       </div>
     </Layout>
