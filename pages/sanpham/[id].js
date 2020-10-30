@@ -4,6 +4,7 @@ import Layout from "../layout/mylayout";
 import firebase from "firebase";
 import Head from "next/head";
 import { ProductJsonLd } from "next-seo";
+import ReactHtmlParser from "react-html-parser";
 
 const firebaseConfig = {
   apiKey: "AIzaSyCmcq8_D6LB5bK49rENMle7XoN1GAWcaMw",
@@ -200,7 +201,7 @@ export default function ProductID(props) {
         </div>
       </div>
       <div className="card container mt-2">
-        <h1>Nội dung cật nhật</h1>
+      {ReactHtmlParser(props.noiDung)}
       </div>
     </Layout>
   );
