@@ -18,16 +18,15 @@ export default function Footer() {
               <h5 className="widget-title">Hỗ trợ<span /></h5>
               <ul className="thumbnail-widget">
                 <li>
-                  <div className="thumb-content"><a href="#.">Chính sách bảo mật</a></div>	
+                  <div className="thumb-content"><a href="https://laobach.com/baiviet/chinh-sach-bao-mat">Chính sách bảo mật</a></div>	
                 </li>
                 <li>
-                  <div className="thumb-content"><a href="#.">Chính sách vận chuyển</a></div>	
+                  <div className="thumb-content"><a href="https://laobach.com/baiviet/chinh-sach-van-chuyen">Chính sách vận chuyển</a></div>	
                 </li>
                 <li>
-                  <div className="thumb-content"><a href="#.">Quy định đổi hàng</a></div>	
                 </li>
                 <li>
-                  <div className="thumb-content"><a href="#.">Hướng dẫn thanh toán</a></div>	
+                  <div className="thumb-content"><a href="https://laobach.com/baiviet/cach-thuc-mua-hang">Cách thức mua hàng</a></div>	
                 </li>
                 <li>
                   <div className="thumb-content"><a href="#.">Địa chỉ tại Google Map</a></div>	

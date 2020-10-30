@@ -223,6 +223,7 @@ export const getServerSideProps = async ({ query }) => {
       content["hinhAnh3"] = result.data().hinhAnh3;
       content["hinhAnh4"] = result.data().hinhAnh4;
       content["hinhAnh5"] = result.data().hinhAnh5;
+      content["noiDung"] = result.data().noiDung;
 
       content["gia"] = result.data().gia;
     });
@@ -237,6 +238,8 @@ export const getServerSideProps = async ({ query }) => {
       hinhAnh3: content.hinhAnh3,
       hinhAnh4: content.hinhAnh4,
       hinhAnh5: content.hinhAnh5,
+      noiDung: content.noiDung,
+
     },
   };
 };

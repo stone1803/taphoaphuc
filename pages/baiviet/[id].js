@@ -40,7 +40,7 @@ const Blog = (props) => {
         <meta property="og:image" content={props.HinhAnh} />
       </Head>
 
-      <div class=" container ">
+      <div class=" container card">
         <div className="pl-5 bg-orange-200 rounded-lg mt-1 py-5">
           {ReactHtmlParser(props.noidung)}
         </div>
