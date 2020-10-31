@@ -28,6 +28,10 @@ export default function ProductID(props) {
     <Layout>
       <Head>
         <title>Lão bạch Shop - {props.tenSanPham}</title>
+        <meta charset="utf-8" />
+
+        <meta property="og:url" content="https://laobach.com " />
+
         <meta name="description" content={props.tomTat} />
         <meta name="thumbnail" content={props.hinhAnh} />
         <meta property="og:title" content={props.tenSanPham} />

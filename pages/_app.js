@@ -38,6 +38,7 @@ import {
 import Loading from "./api/loading";
 import * as gtag from "./api/gtag"
 import Router from 'next/router'
+import MessengerChat from "./api/MessengerChat"
 Router.events.on('routeChangeComplete', (url) => gtag.pageview(url))
 
 function AuthIsLoaded({ children }) {
@@ -75,6 +76,7 @@ function MyApp({ Component, pageProps }) {
       <ReactReduxFirebaseProvider {...rrfProps}>
         <AuthIsLoaded>
           <Component {...pageProps} />{" "}
+
         </AuthIsLoaded>
       </ReactReduxFirebaseProvider>
     </Provider>

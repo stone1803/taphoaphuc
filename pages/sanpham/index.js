@@ -44,22 +44,21 @@ export default function IndexProduct() {
                       <div className="ad-title m-auto">
                         <h5>{data.tenSanPham}</h5>
                       </div>
-                      <Link
-                          href="/sanpham/[id]"
-                          as={"/sanpham/" + data.id}
+                      <Link href="/sanpham/[id]" as={"/sanpham/" + data.id}>
+                        <button
+                          type="button"
+                          class="block px-2 py-1 text-gray-500 rounded hover:bg-orange-300 focus:text-white focus:outline-none"
                         >
-                          <button
-                            type="button"
-                            class="block px-2 py-1 text-gray-500 rounded hover:bg-orange-300 focus:text-white focus:outline-none"
-                          >
-                            <span class="">Xem chi tiết</span>
-                          </button>
-                        </Link>
+                          <span class="">Xem chi tiết</span>
+                        </button>
+                      </Link>
                     </div>
                   </div>
                 </div>
               );
             })}
+    
+          ,
         </div>
       </div>
     </Layout>

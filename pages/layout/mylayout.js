@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "./Navbar";
 import Footer from "./footer";
 import Head from "next/head";
+import MessengerCustomerChat from 'react-messenger-customer-chat';
 
 export default function Layout(props) {
   return (
@@ -56,10 +57,35 @@ export default function Layout(props) {
                   `,
           }}
         />
+ 
+
       </Head>
+      {/* <div id="fb-root"></div>
+      <script
+          dangerouslySetInnerHTML={(function(d, s, id) {
+            var js,
+              fjs = d.getElementsByTagName(s)[0];
+            js = d.createElement(s);
+            js.id = id;
+            js.src =
+              "https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js#xfbml=1&version=v2.12&autoLogAppEvents=1";
+            fjs.parentNode.insertBefore(js, fjs);
+          })(document, "script", "facebook-jssdk")}
+        />
+      <div
+        class="fb-customerchat"
+        page_id="ledanghongphuc"
+        theme_color="#44bec7"
+        logged_in_greeting="Xin chào, tôi có thể hổ trợ gì cho bạn không?"
+        logged_out_greeting="Xin chào, tôi có thể hổ trợ gì cho bạn không?"
+      ></div> */}
       <Navbar />
       {props.children}
-
+      <MessengerCustomerChat
+    pageId="102625614969628"
+    appId="EAAEEzYL73UkBAG5ljD9NWOZASDxNuUBn0il6ZBGsO2ReeqVbboWT8aJISkXK3IV0YlISF6edDBnqPv6KGrNHxkmsw03M7VFBvs9b6EJU08ZAJdfVeRXlx7pukeGHsns677VSt4ZAfwxbP4r5EVyiUzJt2g7q16Mvr3ixS1bZCGwHjzWxJgIsvX13mOYLFUW8ZD"
+    htmlRef="<REF_STRING>"
+  />,
       <Footer />
     </div>
   );
