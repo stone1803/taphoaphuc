@@ -180,24 +180,7 @@ export default function ProductID(props) {
                       MUA HÀNG
                     </a>
                   </button>
-                  <div
-                    class="fb-share-button"
-                    data-href="https://developers.facebook.com/docs/plugins/"
-                    data-layout="button_count"
-                    data-size="small"
-                  >
-                    <a
-                      target="_blank"
-                      href="https://www.facebook.com/sharer/sharer.php?u=https://laobach.com"
-                      class="fb-xfbml-parse-ignore"
-                    >
-                      <button class="like btn btn-info mr-2 mb-2" type="button">
-                        <span class="fa fa-facebook">
-                          Share cho người thân bạn dùng nhé !
-                        </span>
-                      </button>
-                    </a>
-                  </div>
+         
                 </div>
               </div>
             </div>
