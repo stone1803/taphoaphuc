@@ -41,6 +41,7 @@
     "firebase": "^7.20.0",
     "firebase-admin": "^9.1.1",
     "firebase-functions": "^3.11.0",
+    "globby": "^11.0.1",
     "messaging-api-messenger": "^1.0.2",
     "next": "9.5.5",
     "next-images": "^1.4.1",
@@ -74,6 +75,7 @@
     "tailwindcss": "^1.9.6"
   },
   "devDependencies": {
-    "next-sitemap": "^1.2.20"
+    "next-sitemap": "^1.2.20",
+    "prettier": "2.1.2"
   }
 }
