@@ -29,11 +29,11 @@ export default function Footer() {
                   <div className="thumb-content"><a href="https://laobach.com/baiviet/cach-thuc-mua-hang">Cách thức mua hàng</a></div>	
                 </li>
                 <li>
-                  <div className="thumb-content"><a href="#.">Địa chỉ tại Google Map</a></div>	
+                  <div className="thumb-content"><a href="https://www.google.com/maps/place/Shop+L%C3%A3o+B%E1%BA%A1ch/data=!3m1!4b1!4m2!3m1!1s0x317529f168552b03:0xd9c0bd1fa7cc5eec">Địa chỉ tại Google Map</a></div>	
                 </li>
     
                 <li>
-                  <div className="thumb-content"><a href="#.">Về chúng tôi</a></div>	
+                  <div className="thumb-content"><a href="https://huyendo.com">Về chúng tôi</a></div>	
                 </li>
               </ul>
             </div>

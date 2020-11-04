@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import "../../styles/product.css"
 import Layout from "../layout/mylayout";
 import Head from "next/head";
 import Link from "next/link";

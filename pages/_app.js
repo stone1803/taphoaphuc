@@ -1,6 +1,5 @@
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css"
 import "../styles/globals.css";
-import "antd/dist/antd.css";
 import "firebase/firestore";
 import "firebase/auth";
 import firebase from "firebase/app";
