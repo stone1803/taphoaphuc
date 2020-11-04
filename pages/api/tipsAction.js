@@ -27,7 +27,7 @@ export const actionNew = data => {
 
     const firestore = getFirestore();
     firestore
-      .collection("baiviet").doc(data.url)
+      .collection("lienhe").doc(data.dienThoai)
       .set({
         ...data,
   
